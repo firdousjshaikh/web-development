@@ -1,0 +1,104 @@
+<html>
+<head>
+<title>HTML Form </title>
+<style>
+
+body{
+background-color : #e0ebeb;
+border : 2px dotted  #cc00cc;
+padding : 5px;
+margin : 10px;
+}
+
+th{
+font-size : 20px;
+font-family : Arial;
+}
+input{
+width : 100%;}
+input[type=submit], input[type=reset]{
+width : 100%;
+margin : 10px;
+padding : 15 px;
+background-color : #00b33c;
+color : white;
+border : none;
+border-radius : 5px;
+}
+select{
+width : 100%;
+}
+</style>
+</head>
+<body>
+<h1>Admission Form </h1>
+<table>
+<form action="#" method="post">
+<tr>
+<th><label>FirstName : </label></th>
+<td>
+<input type="text" name="fname" placeholder="Enter firstname" autofocus required>
+</td>
+</tr>
+<tr>
+<th><label>LastName : </label></th>
+<td>
+<input type="text" name="lname" placeholder="Enter Surname" required>
+</td>
+</tr>
+<tr>
+<th><label>Mobile Num : </label></th>
+<td>
+<input type="tel" name="mobile" placeholder="Enter mobile number" required>
+</td>
+</tr>
+<tr>
+<th><label>Email id : </label></th>
+<td>
+<input type="email" name="emailid" placeholder="Enter email id"  required>
+</td>
+</tr>
+<tr>
+<th><label>Birth Date : </label></th>
+<td>
+<input type="date" name="dob" required>
+</td>
+</tr>
+<tr>
+<th><label>Gender : </label></th>
+<td>
+<input type="radio" name="gender">Male
+<input type="radio" name="gender">FeMale
+<input type="radio" name="gender">Other
+</td>
+</tr>
+<tr>
+<th><label>Qualification : </label></th>
+<td>
+<input type="checkbox" name="ssc">SSC
+<input type="checkbox" name="hsc">HSC
+<input type="checkbox" name="diploma">Diploma
+</td>
+</tr>
+<tr>
+<th> <label>Edu. Department  : </label></th>
+<td><select>
+<option>Choose Dept </option>
+<option>BEIT</option>
+<option>BECS</option>
+<option>BEENTC</option>
+<option>BEECA</option>
+<option>BEMech</option>
+<option>BECivil</option>
+</select></td></tr>
+<tr>
+<th> <label> Address : </label></th>
+<td><textarea rows=5 cols=15></textarea></td></tr>
+<tr>
+<th><input type="submit" value="ENROLL"></th>
+<th><input type="reset" value="CLEAR"></th>
+</tr>
+</form>
+</table>
+</body>
+</html>
